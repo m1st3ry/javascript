@@ -1,4 +1,4 @@
-var mensagem = 'Olá';
-mensagem = 'Olá Robinson';
+var mensagem = 'Olá'
+mensagem = 'Olá Robinson'
 
-alert(mensagem);
+console.log(mensagem)
