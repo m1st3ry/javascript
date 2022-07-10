@@ -24,3 +24,11 @@ function dados() {
     var CEP = '05150-000';
     var CPF = '313848343-09';
 }
+
+function maior(a, b) {
+    if (a > b) {
+        return a;
+    }   else {
+        return b;
+    }
+}
