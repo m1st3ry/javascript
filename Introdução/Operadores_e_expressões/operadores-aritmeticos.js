@@ -3,6 +3,7 @@
 // x + y  Adição
 // exemplo:
 // 1 + 1 = 2
+// 'ba' + 'nana' = 'banana' // sinal de adição também concatena string.
 
 
 // x - y Subtração
