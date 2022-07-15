@@ -6,13 +6,30 @@ for (var i = 0; i < fsList.length; i++) {
 
 function initMultipleFieldSet(fs) {
     var addButton = document.createElement("button");
-    addButton.type = "Adicionar";
+    addButton.textContent = "Adicionar";
     addButton.type = "button";
 
     fs.appendChild(addButton);
 
+    var firstInput = fs.querySelector("input");
+
     addButton.addEventListener("clic", function() {
+        var div = document.createElement("div");
         var newInput = document.createElement("input");
-        fsList.appendChild(newInput);
+        newInput.name = firstInput.name;
+        newInput.type = firstInput.type;
+
+        var deleteButton = document.createElement("button");
+        deleteButton.textContent = "Excluir";
+        deleteButton.type = "button";
+
+        div.appendChild(newInput);
+        div.appendChild(deleteButton);
+
+        deleteButton.addEventListener("click", function() {
+            div.remove();
+        });
+
+        fs.insertBefore(div, addButton);
     });
 }
