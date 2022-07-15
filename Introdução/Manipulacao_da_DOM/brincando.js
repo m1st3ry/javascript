@@ -1,8 +1,8 @@
-var numero1 = document.getElementById('numero1');
-var numero2 = document.getElementById('numero2');
+var salario = document.getElementById('salario');
+var desconto = document.getElementById('desconto');
 var r = document.getElementById('r');
 
 document.addEventListener('input', function completo() {
-    var resultado = numero1.valueAsNumber / numero2.valueAsNumber;
+    var resultado = salario.valueAsNumber + desconto.valueAsNumber;
     r.textContent = isNaN(resultado) ? '' : resultado;
 });
