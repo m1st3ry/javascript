@@ -10,6 +10,7 @@ class Retangulo {
 
     imprimeNome() {
         console.log('Retangulo');
+    }
 }
 
 class Quadrado extends Retangulo {
