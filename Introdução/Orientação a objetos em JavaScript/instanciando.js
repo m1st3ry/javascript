@@ -5,5 +5,5 @@
         this.largura = largura;
         this.area = function() {
             return this.largura * this.altura;
-        }
+        };
     }
