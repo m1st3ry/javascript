@@ -7,3 +7,6 @@ function Retangulo(altura, largura) {
         return this.largura * this.altura;
     }
 }
+
+var r1 = new Retangulo(3, 4);
+var r2 = new Retangulo(7, 2);
