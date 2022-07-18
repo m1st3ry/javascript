@@ -8,3 +8,16 @@ let curso = {
     presencial: false,
     turma: 1,
 };
+
+let primos2 = [...primos, 17];
+let primos3 = [1, ...primos, 17];
+
+let curso2 = {
+    ...curso,
+    descricao: "Bla bla bla",
+    ativo: true
+}
+
+let curso3 = {
+    ...curso
+};
